@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration</title>
+   
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<body>
+   <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+         <img src="IMG_20220910_103847_221.png" alt="">
+         <div>CENTRAL FITNESS</div>
+      </div>
+      <!-- mid box for navbar -->
+      <div class="mid">
+         <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+         <a href="contact.html">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email Us</button>
+         </a>
+      </div>
+       <div class="container">
+      <h1>Join the best gym of Pune now</h1>
+      <form action="#">
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Age">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Gender">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Locality">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Contact No">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Email Id">
+         </div>
+         <button class="btn">Submit</button>
+      </form>
+   </div>
+   <div class="registrtion">
+      <h1>Registration Successful!</h1>
+   </div>
+   </header>
+</body>
+<script src="jquery-3.6.3.min.js"></script>
+<script>
+   $(document).ready(function () {
+      $('.registrtion').hide();
+
+      $('.btn').click(function () {
+            $('.container').hide(); 
+            $('.registrtion').show();
+         });
+   })
+
+</script>
+
+</html>
